@@ -1,0 +1,70 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../pic/background/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginform,
+.regisform {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.loginform::before, .regisform::before {
+    backdrop-filter: blur(5px);
+}
+
+.card {
+    transition: calc(1s);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+#typeEmailX-2,
+#typePasswordX-2,
+#registerEmail,
+#registerPassword,
+#confirmPassword {
+    background-color: rgba(255, 255, 255, 0);
+    color: white !important;
+}
+
+#typeEmailX-2::placeholder,
+#typePasswordX-2::placeholder,
+#registerEmail::placeholder,
+#registerPassword::placeholder,
+#confirmPassword::placeholder {
+    color: white !important;
+}
+
+.loginbtn,
+.regisbtn {
+    border: 1px white solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.loginbtn:hover,
+.regisbtn:hover {
+    border: 1px white solid;
+    background-color: rgb(11, 154, 88);
+}
+
+.reg, .log {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
